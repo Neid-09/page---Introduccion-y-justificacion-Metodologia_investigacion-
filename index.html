@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Metodología de la Investigación: Introducción y Justificación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 50vh;
+        }
+
+        .flow-arrow {
+            font-size: 2rem;
+            color: #118AB2;
+            line-height: 1;
+        }
+
+        .funnel-step {
+            border: 2px solid #118AB2;
+            clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #118AB2, #06D6A0);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            line-height: 1;
+        }
+    </style>
+</head>
+
+<body class="text-[#073B4C]">
+
+    <header class="gradient-bg text-white text-center p-8 shadow-lg">
+        <h1 class="text-4xl md:text-5xl font-black mb-2">Metodología de la Investigación</h1>
+        <p class="text-xl font-light">Guía Visual para una Introducción y Justificación Sólidas</p>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section id="introduccion" class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-[#118AB2]">1. La Introducción: La Puerta de Entrada a tu Proyecto
+                </h2>
+                <p class="max-w-3xl mx-auto mt-2 text-lg">Es la primera impresión. Su objetivo es contextualizar el
+                    tema, presentar el problema y captar el interés del lector de forma clara y concisa, llevándolo de
+                    lo general a lo específico.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-center">Estructura Clave: El Modelo del Embudo</h3>
+                    <p class="mb-6 text-center">Una buena introducción fluye como un embudo, acotando progresivamente el
+                        campo de estudio hasta llegar al núcleo de tu investigación.</p>
+                    <div class="space-y-4 flex flex-col items-center">
+                        <div
+                            class="w-full max-w-sm p-4 text-center text-white bg-[#118AB2] rounded-t-lg shadow-lg funnel-step">
+                            <h4 class="font-bold">Paso 1: Establecer el Territorio</h4>
+                            <p class="text-sm">Presenta el contexto general y la importancia del área de estudio.</p>
+                        </div>
+                        <div class="flow-arrow">&#129047;</div>
+                        <div
+                            class="w-full max-w-xs p-4 text-center text-white bg-[#118AB2] rounded-t-lg shadow-lg funnel-step">
+                            <h4 class="font-bold">Paso 2: Definir el Nicho</h4>
+                            <p class="text-sm">Identifica un vacío en el conocimiento, un problema no resuelto o una
+                                pregunta abierta.</p>
+                        </div>
+                        <div class="flow-arrow">&#129047;</div>
+                        <div
+                            class="w-full max-w-md p-4 text-center bg-white rounded-lg shadow-inner border-2 border-[#FF6B6B]">
+                            <h4 class="font-bold text-[#FF6B6B]">Paso 3: Ocupar el Nicho</h4>
+                            <p class="text-sm text-[#073B4C]">Declara el propósito de tu estudio, los objetivos y
+                                presenta la estructura del trabajo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-center">Preguntas que Debe Responder</h3>
+                    <p class="mb-6 text-center">Tu introducción debe dar respuesta clara a estas tres preguntas
+                        fundamentales para orientar al lector.</p>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <div
+                                class="flex-shrink-0 w-16 h-16 rounded-full gradient-bg flex items-center justify-center text-white font-black text-2xl shadow-md mr-4">
+                                ¿Qué?</div>
+                            <div>
+                                <h4 class="font-bold text-xl">Tema de Investigación</h4>
+                                <p>Describe con precisión cuál es el problema o fenómeno que se abordará.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div
+                                class="flex-shrink-0 w-16 h-16 rounded-full gradient-bg flex items-center justify-center text-white font-black text-2xl shadow-md mr-4">
+                                ¿Por qué?</div>
+                            <div>
+                                <h4 class="font-bold text-xl">Relevancia y Antecedentes</h4>
+                                <p>Expone brevemente por qué es importante estudiarlo y qué se sabe hasta ahora sobre el
+                                    tema.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div
+                                class="flex-shrink-0 w-16 h-16 rounded-full gradient-bg flex items-center justify-center text-white font-black text-2xl shadow-md mr-4">
+                                ¿Cómo?</div>
+                            <div>
+                                <h4 class="font-bold text-xl">Metodología y Estructura</h4>
+                                <p>Adelanta la metodología que se empleará y cómo se organizará el contenido del
+                                    trabajo.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="my-12 border-t-2 border-[#118AB2] border-dashed">
+
+        <section id="justificacion" class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-[#118AB2]">2. La Justificación: El Corazón Argumentativo</h2>
+                <p class="max-w-3xl mx-auto mt-2 text-lg">Aquí defiendes tu proyecto. Debes convencer al lector de que
+                    tu investigación es necesaria, relevante y útil, exponiendo las razones de peso que motivan su
+                    realización.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <div class="bg-white rounded-lg shadow-md p-6 md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4 text-center">Criterios Clave para una Justificación Sólida</h3>
+                    <p class="text-center max-w-4xl mx-auto mb-6">Una justificación robusta se apoya en varios pilares
+                        que demuestran su valor. El siguiente gráfico ilustra la importancia relativa que suelen tener
+                        estos criterios en proyectos de investigación aplicada.</p>
+                    <div class="chart-container">
+                        <canvas id="justificacionChart"></canvas>
+                    </div>
+                    <p class="text-center text-sm text-gray-600 mt-4">Este gráfico muestra cómo las implicaciones
+                        prácticas y la relevancia social a menudo son los argumentos más fuertes, seguidos por el valor
+                        teórico y la utilidad metodológica, demostrando que la investigación busca tanto resolver
+                        problemas como expandir el conocimiento.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-center">Tipos de Justificación</h3>
+                    <p class="mb-6 text-center">Tu investigación puede justificarse desde diferentes ángulos. Identifica
+                        cuál es el principal motor de tu proyecto.</p>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-[#FF6B6B] p-4 bg-red-50">
+                            <h4 class="font-bold">Justificación Práctica</h4>
+                            <p>Resuelve un problema concreto, propone estrategias o mejora procesos en un contexto real.
+                            </p>
+                        </div>
+                        <div class="border-l-4 border-[#FFD166] p-4 bg-yellow-50">
+                            <h4 class="font-bold">Justificación Teórica</h4>
+                            <p>Busca llenar un vacío en el conocimiento, contrastar una teoría o expandir un modelo
+                                conceptual existente.</p>
+                        </div>
+                        <div class="border-l-4 border-[#06D6A0] p-4 bg-green-50">
+                            <h4 class="font-bold">Justificación Metodológica</h4>
+                            <p>Propone un nuevo método, instrumento de recolección de datos o una nueva forma de
+                                análisis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-center">¿En qué debe basarse?</h3>
+                    <p class="mb-6 text-center">Para que sea convincente, tu argumentación debe fundamentarse en
+                        elementos sólidos y bien articulados.</p>
+                    <ul class="space-y-6">
+                        <li class="flex items-center">
+                            <span class="card-icon text-[#FF6B6B] mr-4">&#128161;</span>
+                            <p><strong>Magnitud y Trascendencia:</strong> Demuestra la importancia del problema con
+                                datos (estadísticas, prevalencia, costos).</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="card-icon text-[#FFD166] mr-4">&#129321;</span>
+                            <p><strong>Factibilidad y Viabilidad:</strong> Argumenta que el estudio es realizable con
+                                los recursos disponibles (tiempo, acceso a datos, presupuesto).</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="card-icon text-[#06D6A0] mr-4">&#127757;</span>
+                            <p><strong>Beneficios e Impacto:</strong> Describe quiénes se beneficiarán con los
+                                resultados y cuál será el alcance social o práctico del proyecto.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="proceso" class="bg-white rounded-lg shadow-xl p-8 mt-12 gradient-bg text-white">
+            <h2 class="text-3xl font-bold text-center mb-6">Proceso Integrado: De la Idea a la Acción</h2>
+            <p class="text-center max-w-3xl mx-auto mb-8 font-light">La introducción y la justificación no son entes
+                aislados. Juntas, establecen una base lógica que conduce directamente al corazón de tu investigación: la
+                pregunta, los objetivos y la metodología.</p>
+            <div
+                class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4 text-center">
+                <div class="p-4 bg-white/20 rounded-lg shadow-md">
+                    <p class="font-bold">Introducción</p>
+                    <p class="text-sm">(Contexto y Problema)</p>
+                </div>
+                <div class="text-2xl font-bold text-white/50">&#10140;</div>
+                <div class="p-4 bg-white/20 rounded-lg shadow-md">
+                    <p class="font-bold">Justificación</p>
+                    <p class="text-sm">(Relevancia y Necesidad)</p>
+                </div>
+                <div class="text-2xl font-bold text-white/50">&#10140;</div>
+                <div class="p-4 bg-white/30 rounded-lg shadow-lg border-2 border-white">
+                    <p class="font-bold">Objetivos y Pregunta de Investigación</p>
+                </div>
+                <div class="text-2xl font-bold text-white/50">&#10140;</div>
+                <div class="p-4 bg-white/20 rounded-lg shadow-md">
+                    <p class="font-bold">Metodología</p>
+                    <p class="text-sm">(Plan de Acción)</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-6 mt-12 bg-[#073B4C] text-white">
+        <p>Una base sólida es el primer paso hacia una investigación exitosa.</p>
+    </footer>
+
+    <script>
+        const ctx = document.getElementById('justificacionChart').getContext('2d');
+        const justificacionChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Implicaciones Prácticas', 'Relevancia Social', 'Valor Teórico', ['Utilidad', 'Metodológica'], 'Conveniencia'],
+                datasets: [{
+                    label: 'Importancia del Criterio',
+                    data: [45, 30, 15, 7, 3],
+                    backgroundColor: [
+                        '#FF6B6B',
+                        '#FFD166',
+                        '#06D6A0',
+                        '#118AB2',
+                        '#073B4C'
+                    ],
+                    borderColor: [
+                        '#c45353',
+                        '#c9a44e',
+                        '#05a97c',
+                        '#0d6c8a',
+                        '#052c3a'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function (value) {
+                                return value + '%'
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: function (tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                    return label.join(' ');
+                                } else {
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
