@@ -10,42 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f0f4f8;
-        }
-
-        .chart-container {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 400px;
-            max-height: 50vh;
-        }
-
-        .flow-arrow {
-            font-size: 2rem;
-            color: #118AB2;
-            line-height: 1;
-        }
-
-        .funnel-step {
-            border: 2px solid #118AB2;
-            clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
-        }
-
-        .gradient-bg {
-            background: linear-gradient(135deg, #118AB2, #06D6A0);
-        }
-
-        .card-icon {
-            font-size: 3rem;
-            line-height: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body class="text-[#073B4C]">
@@ -240,67 +205,7 @@
         <p>Una base sólida es el primer paso hacia una investigación exitosa.</p>
     </footer>
 
-    <script>
-        const ctx = document.getElementById('justificacionChart').getContext('2d');
-        const justificacionChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Implicaciones Prácticas', 'Relevancia Social', 'Valor Teórico', ['Utilidad', 'Metodológica'], 'Conveniencia'],
-                datasets: [{
-                    label: 'Importancia del Criterio',
-                    data: [45, 30, 15, 7, 3],
-                    backgroundColor: [
-                        '#FF6B6B',
-                        '#FFD166',
-                        '#06D6A0',
-                        '#118AB2',
-                        '#073B4C'
-                    ],
-                    borderColor: [
-                        '#c45353',
-                        '#c9a44e',
-                        '#05a97c',
-                        '#0d6c8a',
-                        '#052c3a'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                indexAxis: 'y',
-                scales: {
-                    x: {
-                        beginAtZero: true,
-                        ticks: {
-                            callback: function (value) {
-                                return value + '%'
-                            }
-                        }
-                    }
-                },
-                plugins: {
-                    legend: {
-                        display: false
-                    },
-                    tooltip: {
-                        callbacks: {
-                            title: function (tooltipItems) {
-                                const item = tooltipItems[0];
-                                let label = item.chart.data.labels[item.dataIndex];
-                                if (Array.isArray(label)) {
-                                    return label.join(' ');
-                                } else {
-                                    return label;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        });
-    </script>
+    <script src="assets/js/chart-config.js"></script>
 </body>
 
 </html>
